@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+html a {
+  color: rgba(0,0,0,.5);
+}
+html img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+html a:hover{
+  text-decoration: none;
+  color: rgba(0,0,0,.8);
+}
+.contact {
+  height: 40px;
+  background-color: darkgrey;
+  line-height: 40px;
+}
+.contact a{
+  color: white;
+  font-size: 24px;
+  line-height: 40px;
+  padding: 0 16px;
+}
+.contact a:hover{
+  color: rgba(0,0,0,.5);
+}
+.cart{
+  position: relative;
+  height: 38px;
+  width: 40px;
+  margin: 0 0 0 20px;
+}
+.cart-icon{
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 29px;
+  height: 26px;
+  margin: -12px 0 0 -14px
+}
+.cart-num{
+  display: block;
+  min-width: 20px;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  background-color: red;
+  border-radius: 50%;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+.dropdown-icon {
+  cursor: pointer;
+}
+
+footer {
+  height: 8vh;
+  line-height: 8vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+}

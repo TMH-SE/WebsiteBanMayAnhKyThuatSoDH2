@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="default"
+		template="/WEB-INF/views/template/default.jsp">
+		<put-attribute name="title" value="DH2 Digital" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/template/header.jsp" />
+		<put-attribute name="carousel"
+			value="/WEB-INF/views/template/carousel.jsp" />
+		<put-attribute name="aside"
+			value="/WEB-INF/views/template/aside.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/template/footer.jsp" />
+	</definition>
+
+	<!-- Home -->
+
+	<definition name="danhsachsanpham" extends="default">
+		<put-attribute name="body"
+			value="/WEB-INF/views/sanpham/danh-sach-san-pham.jsp" />
+	</definition>
+
+	<definition name="chinhsachbaohanh" extends="default">
+		<put-attribute name="body"
+			value="/WEB-INF/views/home/chinh-sach-bao-hanh.jsp"></put-attribute>
+	</definition>
+
+	<!-- Login -->
+
+	<definition name="userlogin" extends="default">
+		<put-attribute name="carousel" value="" />
+		<put-attribute name="aside" value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/user_login.jsp" />
+	</definition>
+
+	<!-- Admin -->
+
+	<definition name="admin"
+		template="/WEB-INF/views/admin/admin.jsp">
+		<put-attribute name="title" value="DH2 Digital Admin" />
+		<put-attribute name="sidebar"
+			value="/WEB-INF/views/admin/sidebar.jsp" />
+		<put-attribute name="nav"
+			value="/WEB-INF/views/admin/nav.jsp" />
+		<put-attribute name="section" value="" />
+	</definition>
+	
+	<!-- San Pham -->
+	<definition name="chitietsanpham" extends="default">
+		<put-attribute name="body" value="/WEB-INF/views/sanpham/chi-tiet-san-pham.jsp" />
+	</definition>
+	
+	<!-- Gio Hang -->
+	<definition name="giohang" extends="default">
+		<put-attribute name="body" value="/WEB-INF/views/giohang/gio-hang.jsp" />
+	</definition>
+
+</tiles-definitions>
